@@ -108,7 +108,8 @@
                 <h6>
                     <a href="https://github.com/amahi2001" target="_blank"><i
                             class="fa-brands fa-github-square fa-lg"></i> :
-                        amahi2001</a>
+                        amahi2001
+                    </a>
                 </h6>
             </div>
         </div>
@@ -314,8 +315,10 @@
         $('#dark-mode-toggle').change(function () {
             if ($(this).prop('checked')) {
                 $('body').addClass('dark-mode');
+                $('hr').css('background-color', 'white');
             } else {
                 $('body').removeClass('dark-mode');
+                $('hr').css('background-color', 'black');
             }
         });
     });
